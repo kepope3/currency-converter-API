@@ -1,0 +1,1 @@
+a:23:{i:0;s:3:"CAD";i:1;s:3:"CHF";i:2;s:3:"CNY";i:3;s:3:"DKK";i:4;s:3:"EUR";i:5;s:3:"GBP";i:6;s:3:"HKD";i:7;s:3:"HUF";i:8;s:3:"INR";i:9;s:3:"JPY";i:10;s:3:"MXN";i:11;s:3:"MYR";i:12;s:3:"NOK";i:13;s:3:"NZD";i:14;s:3:"PHP";i:15;s:3:"RUB";i:16;s:3:"SEK";i:17;s:3:"SGD";i:18;s:3:"THB";i:19;s:3:"TRY";i:20;s:3:"USD";i:21;s:3:"ZAR";i:22;s:3:"VND";}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Currency Query Form</title>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="style/cs.css" rel="stylesheet">
+    </head>    
+    <body> 
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <span class="glyphicon glyphicon-euro navbar-left" 
+                          style="color:red; margin-top: 10px;"></span>
+                    <a class="navbar-brand" href="#">Currency Converter API</a>
+                </div>   
+                <ul class="nav navbar-nav navbar-right">                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Setup Functions
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li onmousedown = "ajaxOUT('resetCurrAry');"><a href="#">Reset Currency Array</a></li>
+                            <li onmousedown = "ajaxOUT('resetCurrXML');"><a href="#">Reset Currency XML using Curr Ary</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="container" >
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="well" id="col1">
+                        <div class="panel panel-default" style="background-color: #ebebe0">
+                            <div class="panel-body">          
+                                <h3><u>Form Interface</u></h3>
+                                <form id="convForm" onkeydown="validate();
+                                        if (event.keyCode == 13) {
+                                            ajaxOUT($('#sel1').val());
+                                        }">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Currency Code</label>
+                                        <input type="text" maxlength="3" class="form-control" id="code" placeholder="code">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Currency Name</label>
+                                        <input type="text" maxlength="30" class="form-control" id="name" placeholder="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Rate (&#163;1)</label>
+                                        <input type="text" maxlength="10"  class="form-control" id="rate" placeholder="rate">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Countries (comma separated if 1+)</label>
+                                        <input type="text" maxlength="200" class="form-control" id="countries" placeholder="countries">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sel1">Select list:</label>
+                                        <select class="form-control" onclick="restrictEntry()" id="sel1">
+                                            <option>PUT</option>
+                                            <option>POST</option>
+                                            <option>DELETE</option>
+                                            <option>STATS</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn btn-default btn-primary" type = "button" onclick="ajaxOUT($('#sel1').val())">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="well " id="col3">
+                        <div class="panel panel-default" id="pan2">
+                            <div class="panel-body" id="panBody" >    
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <footer>
+                <p>&copy; 2016 UWE Project, Inc.</p>
+            </footer>
+        </div>
+        <script src="javascript/validateInput.js"></script>
+        <script src="javascript/ajax.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
+

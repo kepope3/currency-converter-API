@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>ATWD1 Assignment</title>
+<style type="text/css">
+.tbl-layout {
+	border-collapse: collapse;
+	border: 1px solid #808080;
+}
+.cell-header {
+	color: #FFFFFF;
+	background-color: #3333FF;
+}
+.cell-back {
+	background-color: #C0C0C0;
+}
+</style>
+</head>
+
+<body>
+<h3>ATWD1 Assignment: Documentation Example</h3>
+<h4>username: ke3-pope | number: 14009024</h4>
+<p><strong>Test Outcomes: (outcome is either pass or fail)</strong></p>
+<table cellpadding="3" class="tbl-layout" style="width: 640
+px">
+	<tbody><tr>
+		<td class="cell-header" style="height: 25px">Test</td>
+		<td style="height: 25px" class="cell-header">Outcome </td>
+		<td style="height: 25px; width: 189px;" class="cell-header">Comment</td>
+	</tr>
+	<tr>
+		<td style="height: 25px">1. Return XML converting 10.35 from GBP to EUR</td>
+		<td style="height: 25px">pass </td>
+		<td style="height: 25px; width: 189px"></td>
+	</tr>
+	<tr>
+		<td class="cell-back">2. Return JSON converting 14.85 from NOK to DKK</td>
+		<td class="cell-back">pass</td>
+		<td style="width: 189px" class="cell-back">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="height: 25px">3. Error 1 - currency not recognized - return 
+		1000</td>
+		<td style="height: 25px">pass</td>
+		<td style="height: 25px; width: 189px;"></td>
+	</tr>
+	<tr>
+		<td class="cell-back">4. Error 2 - no parameters - return 1100</td>
+		<td class="cell-back">pass</td>
+		<td style="width: 189px" class="cell-back">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>5. Error 3 - missing parameter - return 1100</td>
+		<td>pass</td>
+		<td style="width: 189px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="cell-back">6. Error 4 - too many parameters - return 1200</td>
+		<td class="cell-back">pass</td>
+		<td style="width: 189px" class="cell-back">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="height: 25px">7. Error 5 - format value is not 'xml' or 'json' - return 1200</td>
+		<td style="height: 25px">pass</td>
+		<td style="width: 189px; height: 25px;"></td>
+	</tr>
+	<tr>
+		<td class="cell-back" style="height: 25px">8. Error 6 - amnt not a 
+		decimal number - return 1300</td>
+		<td class="cell-back" style="height: 25px">pass</td>
+		<td class="cell-back" style="width: 189px; height: 25px;"></td>
+	</tr>
+	<tr>
+		<td style="height: 25px">9. Error 7 - you will have to make a file 
+		unavailable (for instance) to <br>re-create this error - 
+		return 1400</td>
+		<td style="height: 25px">fail </td>
+		<td style="height: 25px; width: 189px;">Fatal Error - not reproduced.</td>
+	</tr>
+</tbody></table>
+<p><strong>Links to Service:</strong></p>
+<p>Live Service - convert 105.33 from NOK to TRY and format as XML:<br>
+<a href="http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/?from=NOK&amp;to=TRY&amp;amnt=105.33&amp;format=xml" target="_blank">
+http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/?from=NOK&amp;to=TRY&amp;amnt=105.33&amp;format=xml</a></p>
+<p>Live Service - convert 23.63458 from HUF to INR and format as JSON:<br>
+<a href="http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/?from=HUF&amp;to=INR&amp;amnt=23.63458&amp;format=json">
+http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/?from=HUF&amp;to=INR&amp;amnt=23.63458&amp;format=json</a></p>
+<p>Link to Update Form:<br>
+<a href="http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/update_from.html">http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/update_from.html</a></p>
+<p><strong>Links to Data Files:</strong></p>
+<p>Currency File:<br>
+<a href="http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/data/currency.xml">
+http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/data/currency.xml</a></p>
+<p>Rates File:<br>
+<a href="http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/data/rates.xml">
+http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/data/rates.xml</a></p>
+<p>[any other data file links go here]</p>
+<p><strong>Links to PHP source files: </strong></p>
+<p>[Save *. php files as *.phps files and put thm in directory called "source" 
+under "docs"]</p>
+<p>Main index file:<br>
+<a href="http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/docs/source/index.phps">
+http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/docs/source/index.phps</a></p>
+<p>Functions file:<br>
+<a href="http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/docs/source/functions.phps">
+http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/docs/source/functions.phps</a></p>
+<p>POST form handling file:<br>
+<a href="http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/docs/source/currPost.phps">
+http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/docs/source/currPost.phps</a></p>
+<p>PUT form handling file:<br>
+<a href="http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/docs/source/currPut.phps">
+http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/docs/source/currPut.phps</a></p>
+<p>DELETE from form file:<br>
+<a href="http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/docs/source/currPut.phps">
+http://isa.cems.uwe.ac.uk/~a-student/atwd1/assignment/docs/source/currDel.phps</a></p>
+<p>[any other source file links go here - e.g configuration files etc.]</p>
+<hr>
+<p><strong>Critical Evaluation: (&lt; 800 words)</strong></p>
+<p><strong>Advantages/disadvantages of the REST compaired to SOAP and XML 
+	RPC?</strong><br>Lorem ipsum dolor sit amet, has ea erant reprehendunt, duo 
+	cu maiorum urbanitas. Usu ex prima primis dolorem. Mei ne mutat assum 
+	definitiones, et ius iudico moderatius. Saepe ridens denique has cu, modus 
+	placerat maluisset eum et. Malis dicant sit ex. Et his diceret sanctus 
+	feugait.<br><br>Ne duo iudico dictas. Latine forensibus eos ad. Dicit laudem 
+	et per. Tamquam debitis ne his.<br><br>Nam an simul congue, mel an tation 
+	aliquip delectus, natum liberavisse et cum. Pri constituam persequeris 
+	eloquentiam ex, ius vide mazim gloriatur ei. Suas ridens impedit ad cum, ea 
+	timeam urbanitas est. Odio senserit ei vel, at vidisse delicata intellegebat 
+	usu. Paulo adipisci ei vel, duo an omittam inciderint.<br><br>Id case 
+	voluptatum vis, nec id novum concludaturque. Case ridens at nam, ius 
+	recusabo adipiscing te. Duo impetus similique eu, at pri sumo cibo appareat. 
+	Probo virtute fuisset nam id, delenit maiorum quaerendum at cum, dissentias 
+	concludaturque ius ei. An tollit albucius has, at mea putent interesset 
+	consectetuer.<br><br><strong>Extending and Improving the Application<br>
+</strong>Lorem ipsum dolor sit amet, has ea erant reprehendunt, duo cu maiorum 
+urbanitas. Usu ex prima primis dolorem. Mei ne mutat assum definitiones, et ius 
+iudico moderatius. Saepe ridens denique has cu, modus placerat maluisset eum et. 
+Malis dicant sit ex. Et his diceret sanctus feugait.<br><br>Ne duo iudico 
+dictas. Latine forensibus eos ad. Dicit laudem et per. Tamquam debitis ne his.<br>
+<br>Nam an simul congue, mel an tation aliquip delectus, natum liberavisse et 
+cum. Pri constituam persequeris eloquentiam ex, ius vide mazim gloriatur ei. 
+Suas ridens impedit ad cum, ea timeam urbanitas est. Odio senserit ei vel, at 
+vidisse delicata intellegebat usu. Paulo adipisci ei vel, duo an omittam 
+inciderint.<br><br>Id case voluptatum vis, nec id novum concludaturque. Case 
+ridens at nam, ius recusabo adipiscing te. Duo impetus similique eu, at pri sumo 
+cibo appareat. Probo virtute fuisset nam id, delenit maiorum quaerendum at cum, 
+dissentias concludaturque ius ei. An tollit albucius has, at mea putent 
+interesset consectetuer.<br></p>
+<p><strong>Promotion and code re-use<br></strong>Lorem ipsum dolor sit amet, 
+has ea erant reprehendunt, duo cu maiorum urbanitas. Usu ex prima primis 
+dolorem. Mei ne mutat assum definitiones, et ius iudico moderatius. Saepe ridens 
+denique has cu, modus placerat maluisset eum et. Malis dicant sit ex. Et his 
+diceret sanctus feugait.<br><br>Ne duo iudico dictas. Latine forensibus eos ad. 
+Dicit laudem et per. Tamquam debitis ne his.<br><br>Nam an simul congue, mel an 
+tation aliquip delectus, natum liberavisse et cum. Pri constituam persequeris 
+eloquentiam ex, ius vide mazim gloriatur ei. Suas ridens impedit ad cum, ea 
+timeam urbanitas est. Odio senserit ei vel, at vidisse delicata intellegebat 
+usu. Paulo adipisci ei vel, duo an omittam inciderint.<br><br>Id case voluptatum 
+vis, nec id novum concludaturque. Case ridens at nam, ius recusabo adipiscing 
+te. Duo impetus similique eu, at pri sumo cibo appareat. Probo virtute fuisset 
+nam id, delenit maiorum quaerendum at cum, dissentias concludaturque ius ei. An 
+tollit albucius has, at mea putent interesset consectetuer.</p>
+<hr>
+<p><strong>Any other comments / feedback:</strong></p>
+<p>Lorem ipsum dolor sit amet, has ea erant reprehendunt, duo cu maiorum 
+urbanitas. Usu ex prima primis dolorem. Mei ne mutat assum definitiones, et ius 
+iudico moderatius. Saepe ridens denique has cu, modus placerat maluisset eum et. 
+Malis dicant sit ex. Et his diceret sanctus feugait.<br><br>Ne duo iudico 
+dictas. Latine forensibus eos ad. Dicit laudem et per. Tamquam debitis ne his.<br>
+<br>Nam an simul congue, mel an tation aliquip delectus, natum liberavisse et 
+cum. Pri constituam persequeris eloquentiam ex, ius vide mazim gloriatur ei. 
+Suas ridens impedit ad cum, ea timeam urbanitas est. Odio senserit ei vel, at 
+vidisse delicata intellegebat usu. Paulo adipisci ei vel, duo an omittam 
+inciderint.<br><br>Id case voluptatum vis, nec id novum concludaturque. Case 
+ridens at nam, ius recusabo adipiscing te. Duo impetus similique eu, at pri sumo 
+cibo appareat. Probo virtute fuisset nam id, delenit maiorum quaerendum at cum, 
+dissentias concludaturque ius ei. An tollit albucius has, at mea putent 
+interesset consectetuer.</p>
+<hr>
+<p>&nbsp;</p>
+
+
+
+</body></html>
